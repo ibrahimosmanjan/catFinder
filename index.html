@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Cat Finder</title>
+        <link rel="stylesheet" href="assets/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
+    </head>
+    <body>
+    <section id = "catBackground">
+        <img src="images/catFinder_logo.png" class="logo">
+        <div class = "banner-text">
+                <h1> Cat Finder</h1>
+                <p>Welcome to the Page that'll help you Determine your cat</p>
+                <div class = "banner-btn">
+                        <a href="#"><span></span>Cat Test</a>
+                        <a href="#"><span></span>Human Test</a>
+                </div>
+        </div>
+    </section>
+
+    <div id = "sideNav">
+        <nav>
+            <ul>
+                <li><a href=index.html">Home</a></li>
+                <li><a href="#">CatCyclopedia</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="signIn.html">Sign in</a></li>
+            </ul>
+        </nav>
+
+    </div>
+    <div id = "menuBtn">
+        <img src="images/menuBtn.png" id = "menu" width="50" height="50">
+    </div>
+
+    <!--Features-->
+    <section id="feature">
+        <div class="title-text">
+            <p>FEATURES</p>
+            <h1>Why Choose Us</h1>
+        </div>
+        <div class="feature-box">
+            <div class="features">
+                <h1>
+                    Experienced Staff
+                </h1>
+            </div>
+            <div class="features-img">
+                <img src="images/anthing">
+            </div>
+        </div>
+    </section>
+<script>
+    var menuBtn = document.getElementById("menuBtn")
+    var sideNav = document.getElementById("sideNav")
+    var menu = document.getElementById("menu")
+
+    sideNav.style.right = "-250px";
+
+    menuBtn.onclick = function(){
+        if(sideNav.style.right == "-250px"){
+            sideNav.style.right = "0";
+            menu.src = "images/close.png";
+        } else{
+            sideNav.style.right = "-250px";
+            menu.src = "images/menuBtn.png";
+        }
+    }
+
+</script>
+
+    </body>
+</html>
